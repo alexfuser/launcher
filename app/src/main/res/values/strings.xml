@@ -1,0 +1,18 @@
+<resources>
+    <!-- app name -->
+    <string name="app_name">LauncherDemo</string>
+    <string name="app_description">launcher demo</string>
+
+    <!-- common strings -->
+    <string name="unknown">Unknown</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_display_app_launcher">App Launcher</string>
+    <string name="dashboard_title">Launcher Demo</string>
+
+    <!-- App Launcher -->
+    <string name="dialog_app_launcher_header">App Launcher</string>
+    <string name="dialog_app_launcher_apps_available" formatted="false"> %d</string>
+    <string name="dialog_app_launcher_no_apps_available">Apps no instaladas</string>
+    <string name="service_description_app_launcher_file_monitor" translatable="false">App Launcher File Monitor</string>
+</resources>

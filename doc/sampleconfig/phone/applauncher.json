@@ -1,0 +1,8 @@
+{
+    "Apps": [
+        "com.google.android.apps.maps",
+        "com.samsung.android.contacts",
+        "com.google.android.videos"
+    ],
+    "FloatApps": false
+}
