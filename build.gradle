@@ -3,7 +3,10 @@ buildscript {
     // dependency versioning info
     ext {
         // kotlin version
-        kotlin_version = '1.3.31'
+        kotlin_version = '1.5.30'
+        compileSdkVersion           = 31
+        targetSdkVersion            = 31
+        supportLibVersion = '1.3.1'
     }
 
     repositories {
@@ -17,13 +20,13 @@ buildscript {
     dependencies {
         // gradle plugin
         // ref: https://developer.android.com/studio/build/
-        classpath 'com.android.tools.build:gradle:3.4.1'
+        classpath 'com.android.tools.build:gradle:7.2.2'
 
         // kotlin gradle plugin
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // navigation architecture component - safe args
-        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.1.0-alpha04"
+        classpath 'androidx.navigation:navigation-safe-args-gradle-plugin:2.4.1'
     }
 }
 

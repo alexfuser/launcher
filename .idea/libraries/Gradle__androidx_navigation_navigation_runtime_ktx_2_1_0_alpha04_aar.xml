@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.navigation:navigation-runtime-ktx:2.1.0-alpha04@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b096a32ac8640cb215fed42bf734c745/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b4f28c2409c758a2671f5036468e4cfb/transformed/navigation-runtime-ktx-2.1.0-alpha04/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ec71553eeef1adee331c8147d401e715/transformed/navigation-runtime-ktx-2.1.0-alpha04/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c96505c6527ff72f166d49bef57219e2/transformed/navigation-runtime-ktx-2.1.0-alpha04/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/976b1123f6b099f26ead25c9bec0f0d3/transformed/navigation-runtime-ktx-2.1.0-alpha04/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/976b1123f6b099f26ead25c9bec0f0d3/transformed/navigation-runtime-ktx-2.1.0-alpha04/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/976b1123f6b099f26ead25c9bec0f0d3/transformed/navigation-runtime-ktx-2.1.0-alpha04/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.navigation/navigation-runtime-ktx/2.1.0-alpha04/1fad01b6a197b7708c952d7808848767f6fb1cbe/navigation-runtime-ktx-2.1.0-alpha04-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

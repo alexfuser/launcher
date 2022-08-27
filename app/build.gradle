@@ -6,16 +6,16 @@ apply plugin: 'androidx.navigation.safeargs.kotlin'
 
 android {
     // compile SDK version = Android P
-    compileSdkVersion 28
+    compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
         applicationId 'com.vidar.applauncherdemo'
 
         // minimum = Android Lollipop
-        minSdkVersion 21
+        minSdkVersion 23
 
         // target = Android Pie
-        targetSdkVersion 28
+        targetSdkVersion 31
 
         // note: increment on each release
         versionCode 1
@@ -28,6 +28,10 @@ android {
     dataBinding {
         enabled = true
     }
+    buildFeatures {
+        viewBinding = true
+    }
+
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -130,4 +134,11 @@ dependencies {
     */
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation "androidx.appcompat:appcompat:$rootProject.ext.supportLibVersion"
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'com.google.android.material:material:1.4.0'
+
 }
