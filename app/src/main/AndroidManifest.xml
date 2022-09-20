@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
           package="com.vidar.applauncherdemo">
-
+    <!-- Hola!-->
     <!-- ****************************************** PERMISSIONS ****************************************** -->
     <!-- PERMISSION CATEGORY: DANGEROUS (STORAGE group) -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
