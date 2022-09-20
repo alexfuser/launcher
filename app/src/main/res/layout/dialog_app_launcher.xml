@@ -19,17 +19,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@android:color/white"
+        android:background="@android:color/darker_gray"
         android:minWidth="@dimen/app_launcher_dialog_min_width"
         android:minHeight="@dimen/app_launcher_dialog_min_height"
         android:padding="@dimen/app_launcher_dialog_padding">
 
-        <!-- header -->
+        <!-- header
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="@dimen/app_launcher_dialog_header_height"
             android:layout_gravity="top|center_horizontal"
-            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardBackgroundColor="@color/cardview_light_background"
             app:cardCornerRadius="@dimen/app_launcher_dialog_header_card_corner_radius"
             app:cardElevation="@dimen/app_launcher_dialog_header_card_elevation"
             app:cardUseCompatPadding="true"
@@ -40,7 +40,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="top">
 
-                <!-- icon -->
+              icon
                 <ImageView
                     android:layout_width="@dimen/app_launcher_dialog_header_icon_size"
                     android:layout_height="@dimen/app_launcher_dialog_header_icon_size"
@@ -48,9 +48,9 @@
                     android:layout_marginEnd="@dimen/app_launcher_dialog_header_icon_margin_end"
                     android:contentDescription="@string/unknown"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/rocket_launch" />
+                    android:src="@drawable/vidarlogo" />
 
-                <!-- text -->
+                text
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -60,11 +60,11 @@
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/app_launcher_dialog_header_text_size"
                     android:textStyle="bold"
-                    tools:text="Blah Blah Blah" />
+                    tools:text="" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
+    -->
         <!-- launcher background (displayed when no apps are configured) -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -80,7 +80,7 @@
                 android:layout_gravity="center"
                 android:contentDescription="@string/unknown"
                 android:scaleType="fitCenter"
-                android:src="@drawable/rocket_launch" />
+                android:src="@drawable/vidarlogo" />
 
             <!-- text -->
             <TextView
@@ -90,7 +90,7 @@
                 android:text="@string/dialog_app_launcher_no_apps_available"
                 android:textAlignment="center"
                 android:textSize="@dimen/app_launcher_dialog_background_text_size"
-                tools:text="Blah Blah Blah" />
+                tools:text="" />
         </LinearLayout>
 
         <!-- collection of apps that can be launched -->
@@ -112,6 +112,6 @@
             android:text="@{viewmodel.appLauncherLabel}"
             android:textAlignment="center"
             android:textSize="@dimen/app_launcher_dialog_footer_text_size"
-            tools:text="Apps Configured: 1" />
+            tools:text="" />
     </FrameLayout>
 </layout>

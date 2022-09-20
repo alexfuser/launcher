@@ -37,7 +37,7 @@
                 android:layout_marginBottom="@dimen/app_launcher_dialog_app_icon_margin_bottom"
                 android:contentDescription="@string/unknown"
                 android:scaleType="fitCenter"
-                tools:src="@drawable/rocket_launch" />
+                tools:src="@drawable/vidarlogo" />
 
             <!-- app text -->
             <TextView

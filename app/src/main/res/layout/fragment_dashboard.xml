@@ -28,7 +28,7 @@
                 android:contentDescription="@string/unknown"
                 android:scaleType="fitCenter"
                 android:layout_marginBottom="@dimen/dashboard_display_dialog_margin_bottom"
-                android:src="@drawable/rocket_launch"/>
+                android:src="@drawable/vidarlogo"/>
 
         <!-- Description of the Launcher -->
         <TextView
@@ -43,6 +43,6 @@
                 android:textColor="@android:color/darker_gray"
                 android:textStyle="bold"
                 android:text="@string/dashboard_display_app_launcher"
-                tools:text="Click to display App Launcher dialog" />
+                tools:text="Tocar para aparecer el cuadro de dialogo del Launcher" />
     </RelativeLayout>
 </layout>

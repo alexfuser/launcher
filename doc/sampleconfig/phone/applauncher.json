@@ -1,9 +1,7 @@
 {
     "Apps": [
         "com.google.android.apps.maps",
-        "com.samsung.android.contacts",
-        "com.facebook.katana",
-        "com.google.android.videos"
+        "com.facebook.katana"
     ],
     "FloatApps": false
 }
