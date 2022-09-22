@@ -27,7 +27,6 @@ import android.view.View
 import com.google.android.material.snackbar.Snackbar
 import com.vidar.applauncherdemo.MyDeviceAdminReceiver
 import com.vidar.applauncherdemo.databinding.ActivityMainBinding
-import kotlinx.android.synthetic.main.content_main.view.*
 
 //import com.vidar.applauncherdemo.databinding.ActivityMainBinding
 
@@ -49,10 +48,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var mAdminComponentName: ComponentName
     private lateinit var mDevicePolicyManager: DevicePolicyManager
     private lateinit var binding: ActivityMainBinding
-
-
-
-
 
     companion object {
         const val LOCK_ACTIVITY_KEY = "com.vidar.applauncherdemo.MainActivity"
