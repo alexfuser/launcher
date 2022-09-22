@@ -7,13 +7,15 @@ package com.vidar.applauncherdemo.view.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.vidar.applauncherdemo.R
 import com.vidar.applauncherdemo.event.interfaces.AppLauncherCallback
 import com.vidar.applauncherdemo.util.logging.Logger
 import com.vidar.applauncherdemo.viewmodel.AppLauncherViewModel
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.card_app.view.*
 
 //endregion import directives
 
@@ -35,24 +37,28 @@ class AppLauncherAdapter(var apps: List<AppLauncherViewModel.App>,
                                       private val clickCallback: AppLauncherCallback) : RecyclerView.ViewHolder(view) {
         fun bind(app: AppLauncherViewModel.App) {
             try {
+                val appIcon = view.findViewById<ImageView>(R.id.app_icon)
+                val appText = view.findViewById<TextView>(R.id.app_text)
+
                 // first set the icon to null (this fixes the issue where the wrong image sometimes displays due to recycling behavior)
-                view.app_icon.setImageDrawable(null)
+                appIcon.setImageDrawable(null)
 
                 when (app) {
                     is AppLauncherViewModel.App.AppInfo -> {
                         // app card
-                        view.app_card.setOnClickListener { clickCallback.onAppClicked(app) }
+                        view.findViewById<CardView>(R.id.app_card)
+                            .setOnClickListener { clickCallback.onAppClicked(app) }
 
                         // app icon
-                        view.app_icon.setImageDrawable(app.icon)
+                        appIcon.setImageDrawable(app.icon)
 
                         // app text
-                        view.app_text.text = app.label
+                        appText.text = app.label
                     }
                 }
 
                 // required for marquee effect on long strings
-                view.app_text.isSelected = true
+                appText.isSelected = true
             } catch (ex: Exception) {
                 Logger.w(ex)
             }
@@ -135,7 +141,9 @@ class AppLauncherAdapter(var apps: List<AppLauncherViewModel.App>,
             super.onViewRecycled(holder)
 
             // cancel any pending requests to load an image
-            Picasso.get().cancelRequest((holder as AppLauncherViewHolder).view.app_icon)
+            Picasso.get()
+                .cancelRequest((holder as AppLauncherViewHolder)
+                    .view.findViewById(R.id.app_icon) as ImageView)
         } catch (ex: Exception) {
             Logger.w(ex)
         }
